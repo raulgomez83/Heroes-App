@@ -1,0 +1,47 @@
+body{
+    min-height: 100%;
+    margin: 0;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 85vh;
+    align-items: center;
+
+}
+.cardHeroList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+
+}
+.heroCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.searchResults{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+.gridCard{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: nowrap;
+
+}

@@ -16,23 +16,18 @@ export const SearchPage = ({ history }) => {
     });
     const { searchText } = formValues;
 
-    const heroesFiltered = useMemo(() => getHeroesByName ( q ), [q])
-
-
+    const heroesFiltered = useMemo(() => getHeroesByName ( q ), [q]);
     const handleSearch = (e) => {
         e.preventDefault();
         history.push(`?q=${ searchText }`);
     }
-
     return (
         <div>
-            <h1>Search Screen</h1>
+            <h1 className="mt-2 ml-2">Search Screen</h1>
             <hr />
-            <div className="row">
+            <div className="container search">
                 <div className="col-5">
-                    <h4> Search Form </h4>
-                    <hr />
-                    <form onSubmit={ handleSearch }>
+                    <form className="searchForm" onSubmit={ handleSearch }>
                         <input
                             type="text"
                             placeholder="Find your hero"
@@ -45,13 +40,13 @@ export const SearchPage = ({ history }) => {
 
                         <button
                             type="submit"
-                            className="btn m-1 btn-block btn-outline-primary"
+                            className="btn m-2 btn-outline-primary"
                         >
                             Search...
                         </button>
                     </form>
                 </div>
-                <div className="col-7">
+                <div className="searchResults col-7">
                     <h4> Results </h4>
                     <hr />
                     {
