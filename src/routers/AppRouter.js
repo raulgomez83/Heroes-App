@@ -12,7 +12,6 @@ export const AppRouter = () => {
 
   const {user} = useContext(AuthContext)
 
-
     return (
         <Router>
         <div>
